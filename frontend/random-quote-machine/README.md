@@ -1,4 +1,42 @@
-# RandomQuoteMachine
+# Build a Random Quote Machine
+
+## Objective
+
+Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/ONjoLe/.
+
+## Requirements
+
+* User Story: I can click a button to show me a new random quote.
+
+* User Story: I can press a button to tweet out a quote.
+
+## Notes
+
+Issue resolutions:
+
+* to make the favicon work for both dev and production, put it in /assets
+* to make Karma tests work when using Angular material, import material into the test spec, thusly:
+
+```javascript
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MaterialModule } from '@angular/material'; // add this line
+import { HeaderComponent } from './header.component';
+
+describe('HeaderComponent', () => {
+  let component: HeaderComponent;
+  let fixture: ComponentFixture<HeaderComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      imports:[MaterialModule.forRoot()], // and this line
+      declarations: [ HeaderComponent ]
+    })
+    .compileComponents();
+  }));
+});
+```
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
