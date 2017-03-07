@@ -8,6 +8,7 @@
 }
 .wiki-link {
     margin-left: 70px;
+    color: white;
 }
 figcaption {
     max-width: 300px;
@@ -15,5 +16,8 @@ figcaption {
 @media (max-width: 700px) {
     .hero {
         flex-direction: column;
+    }
+    aside {
+        margin: 0 auto;
     }
 }
