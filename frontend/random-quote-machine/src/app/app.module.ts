@@ -6,11 +6,13 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { AppComponent } from './components/app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
