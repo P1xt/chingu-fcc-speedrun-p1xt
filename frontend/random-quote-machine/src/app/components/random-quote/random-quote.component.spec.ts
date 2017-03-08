@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TruncateTweetPipe } from '../../pipes/truncate-tweet.pipe';
 import { RandomQuoteComponent } from './random-quote.component';
 
 describe('RandomQuoteComponent', () => {
@@ -8,7 +8,7 @@ describe('RandomQuoteComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RandomQuoteComponent ]
+      declarations: [ RandomQuoteComponent, TruncateTweetPipe ]
     })
     .compileComponents();
   }));
@@ -19,7 +19,4 @@ describe('RandomQuoteComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
