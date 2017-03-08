@@ -1,0 +1,17 @@
+<section>
+  <article>
+    <md-card>
+      <div class="quote">
+      <p class="quote-text"><fa name="quote-left"></fa> {{ quote.quoteText }}</p>
+      <p class="quote-author">by <em>{{ quote.quoteAuthor || "Unknown"}}</em></p>
+      </div>
+      <footer>
+        <a md-mini-fab color="accent" class="quote-link" href="{{quote.quoteText | truncateTweet}}"><fa name="twitter"></fa></a>
+        <button md-raised-button color="accent" class="quote-link" (click)="getQuote()">Next Quote</button>
+      </footer>
+    </md-card>
+  </article>
+</section>
+<section>
+  <p>Uses the <a href="http://forismatic.com/en/">Forismatic API</a></p>
+</section>
