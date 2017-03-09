@@ -12,12 +12,15 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
 }
 
 app-root {
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-width:0;
+  min-height:0;
 }
 
 
