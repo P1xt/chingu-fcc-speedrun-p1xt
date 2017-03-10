@@ -1,0 +1,28 @@
+{
+	"name": "p1xt-timestamp-ms",
+	"version": "0.0.1",
+	"description": "Timestamp Microservice project from freeCodeCamp",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"moment": "^2.17.1",
+		"express": "^4.15.0",
+		"body-parser": "^1.17.1",
+		"pug": "^0.1.0"
+	},
+	"engines": {
+		"node": "^6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://hyperdev.com/#!/project/peat-track"
+	},
+	"keywords": [
+		"node",
+		"hyperdev",
+		"express"
+	],
+	"license": "MIT"
+}

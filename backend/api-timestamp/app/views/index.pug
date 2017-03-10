@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title} - FCC Speedrun
+    link(id='favicon', rel='icon', type='image/x-icon', href='https://cdn.gomix.com/6b38c407-645c-4cad-beea-3f7aaf616b9c%2Ffavicon.ico')
+    link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
+    link(href='/main.css', rel='stylesheet')
+
+  body
+    h1 Timestamp Microservice
+    h2 Example Usage
+
+    p #{fullUrl}api/v1/timestamp/December%2015,%202015<br>
+    p #{fullUrl}api/v1/timestamp/1450137600
+
+    h2 Example Output
+    p { "unix": 1450137600, "natural": "December 15, 2015" } 
