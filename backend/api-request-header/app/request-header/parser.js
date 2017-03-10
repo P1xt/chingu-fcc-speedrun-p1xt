@@ -1,5 +1,3 @@
-const moment = require('moment');
-
 module.exports = {
     parse: function (req, res) {
         let requestData = {
