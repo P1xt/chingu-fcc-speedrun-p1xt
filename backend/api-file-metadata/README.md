@@ -13,3 +13,4 @@ Build a full stack app that is functionally similar to this: https://aryanj-file
 **Hint:** You may want to use this package: https://www.npmjs.com/package/multer
 
 ## Notes
+[Live Demo](https://gomix.com/#!/project/planet-pearl)
