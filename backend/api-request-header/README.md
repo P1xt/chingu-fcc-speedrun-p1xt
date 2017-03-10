@@ -9,3 +9,5 @@ Build a full stack app that is functionally similar to this: https://cryptic-rid
 * User Story: I can get the IP address, language and operating system for my browser.
 
 ## Notes
+
+[Live Demo](https://strong-pyramid.gomix.me)
