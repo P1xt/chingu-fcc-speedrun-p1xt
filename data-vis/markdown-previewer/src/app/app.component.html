@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <md-toolbar color="primary">{{title}}</md-toolbar>
+</header>
+
+<main>
+  <section class="markdown">
+    <div id="pre-marked" class="preview">
+      <textarea [(ngModel)]="input" name="text" class="text" ></textarea>
+    </div>
+    <div></div>
+    <div id="marked" class="preview">
+      <div innerHtml={{input|mark}} name="text-marked" class="text" ></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+<md-toolbar color="primary">
+  <p>&copy; P1xt 2017</p>
+</md-toolbar>
+</footer>
