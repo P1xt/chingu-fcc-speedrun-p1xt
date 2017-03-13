@@ -13,3 +13,5 @@ Build a full stack app that allows you to search for images like this: https://c
 * User Story: I can get a list of the most recently submitted search strings.
 
 ## Notes
+https://substantial-hiss.gomix.me/api/image-search
+https://gomix.com/#!/project/substantial-hiss
