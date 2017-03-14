@@ -2,8 +2,12 @@
   <app-header></app-header>
 </header>
 <main>
-  <app-all-time></app-all-time>
-  <app-thirty-days></app-thirty-days>
+  <md-tab-group>
+  <md-tab label="Past 30 Days"><app-thirty-days></app-thirty-days></md-tab>
+  <md-tab label="All Time"><app-all-time></app-all-time></md-tab>
+</md-tab-group>
+  
+  
 </main>
 <footer>
   <app-footer></app-footer>

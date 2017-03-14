@@ -22,27 +22,76 @@ app-root {
   min-height:0;
 }
 
-.markdown {
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-    .preview {
-        flex: 1;
-        padding:0 15px;
-        .text {
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            height: 80vh;
-            padding: 5px;
-            resize: none;
-            width: 100%;
-            overflow-y:auto;
-        }
-    }
+header {
+  order: 1;
+  flex-shrink: 0;
+}
 
+main {
+  order: 2;
+  flex: 1;
+  overflow: auto;
+  padding: 0 16px;
 }
-.center-element {
+
+footer {
+  order: 3;
+  flex-shrink: 0;
+}
+h2 {
+  color: #656565;
+}
+.fill {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1 1 auto;
 }
+
+table {
+  background-color: #fff;
+}
+th, td {
+  text-align: left;
+  padding: 0.2rem;
+  vertical-align: middle;
+  border-top: 0;
+}
+th {
+  color: #656565;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f5f5f5;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+.avatar-cell {
+   padding: 0;
+   margin: 0;
+   width: 48px;
+   max-width: 48px;
+}
+.avatar {
+    max-width: 40px;
+    max-height: 40px;
+    margin-top: 2px;
+    padding: 2px;
+    border: 2px solid #ccc;
+}
+
+.leader-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    table {
+        width: 90%;
+        max-width: 90%;
+    }
+}
+

@@ -1,3 +1,20 @@
-<p>
-  thirty-days works!
-</p>
+<section class="leader-table">
+  <h2>Past 30 Days Leaderboard</h2>
+  <table class="table-hover table-striped">
+    <thead>
+      <tr>
+        <th colspan="2">Camper</th>
+        <th>Points in past 30 days</th>
+        <th>All time Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let camper of campers">
+        <td cellpadding="0" cellspacing="0" class="avatar-cell"><img class="avatar" src="{{camper.img}}" alt="camper avatar"></td>
+        <td>{{camper.username}}</td>
+        <td>{{camper.recent}}</td>
+        <td>{{camper.alltime}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
