@@ -73,7 +73,7 @@ Copy this table as needed to make a separate table for each team member for reco
 |      |  [ ]()  | [Build a Tic Tac Toe Game](./frontend/tictactoe-game) |  |
 |      |  [ ]()  | [Build a Simon Game](./frontend/simon-game) |  |
 |  3/13/2017 |  [Medium Post](https://medium.com/@P1xt/fcc-speedrun-markdown-previewer-5ce1658f41ca#.aa4ujx5um)  | [Build a Markdown Previewer](./data-vis/markdown-previewer) |  |
-|      |  [ ]()  | [Build a Camper Leaderboard](./data-vis/camper-leaderboard) |  |
+|  3/13/2017 |  [Medium Post](https://medium.com/@P1xt/fcc-speedrun-camper-leaderboard-618fe3c9e6c5#.egtijchw0)  | [Build a Camper Leaderboard](./data-vis/camper-leaderboard) |  |
 |      |  [ ]()  | [Build a Recipe Box](./data-vis/recipe-box) |  |
 |      |  [ ]()  | [Build the Game of Life](./data-vis/game-of-life) |  |
 |      |  [ ]()  | [Build a Roguelike Dungeon Crawler](./data-vis/dungeon-crawler) |  |

@@ -1,6 +1,5 @@
-import { Injectable }    from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { Camper } from '../classes/camper';
 
 @Injectable()
 export class AllTimeService {
@@ -9,8 +8,8 @@ export class AllTimeService {
 
   getCampers = () => {
     let apiUrl: string = 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime';
-        return this.http
-               .get(apiUrl)
-               .map(response => response.json());
+    return this.http
+      .get(apiUrl)
+      .map(response => response.json());
   }
 }
