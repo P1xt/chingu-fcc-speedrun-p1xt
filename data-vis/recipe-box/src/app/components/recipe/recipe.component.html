@@ -1,3 +1,9 @@
-<p>
-  recipe works!
-</p>
+<h1 md-dialog-title>Recipe</h1>
+<div md-dialog-content>
+  <input hidden #id value={{data.id}}>
+  <p><label>Name: <input #name value={{data.name}}></label></p>
+  <p><label>Ingredients: <input #ingredients value={{data.ingredients}}></label></p>
+</div>
+<div md-dialog-actions>
+        <button md-raised-button color="primary"(click)="dialogRef.close({id: id.value, name: name.value, ingredients: ingredients.value})">Submit</button>
+</div>

@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
-
+import { MdDialog } from '@angular/material';
 import { AppComponent } from './components/app.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 import { RecipeComponent } from './components/recipe/recipe.component';
+import { Recipe } from './classes/recipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { RecipeComponent } from './components/recipe/recipe.component';
     RecipeListComponent,
     RecipeComponent
   ],
+  entryComponents: [RecipeComponent],
   imports: [
     BrowserModule,
     FormsModule,

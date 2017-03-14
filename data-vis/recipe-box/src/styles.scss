@@ -3,7 +3,7 @@
 @include mat-core();
 
 $app-primary: mat-palette($mat-blue-grey);
-$app-accent:  mat-palette($mat-grey);
+$app-accent:  mat-palette($mat-amber, A200, A100, A400);
 $app-warn:    mat-palette($mat-red);
 $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
@@ -31,25 +31,7 @@ app-root {
   min-height:0;
 }
 
-.markdown {
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-    .preview {
-        flex: 1;
-        padding:0 15px;
-        .text {
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            height: 80vh;
-            padding: 5px;
-            resize: none;
-            width: 100%;
-            overflow-y:auto;
-        }
-    }
 
-}
 .center-element {
   display: flex;
   align-items: center;
@@ -75,4 +57,34 @@ footer {
 .fill {
   display: flex;
   flex: 1 1 auto;
+}
+.heading {
+    margin-top: 30px;
+
+}
+.recipes {
+  display: flex;
+  flex-wrap: wrap;  
+  md-card {
+      width: 300px;
+      min-width: 300px;
+      margin: 30px;
+      flex: 1;
+      justify-content: space-between;
+  }
+}
+md-card-header, md-card-content {
+    font-weight: 500;
+    color: #656565;
+}
+md-card-content {
+    min-height: 150px;
+}
+md-card-footer {
+    display: flex;
+    flex-direction: row;
+    button {
+        flex: 1;
+        justify-content: space-between;
+    }
 }

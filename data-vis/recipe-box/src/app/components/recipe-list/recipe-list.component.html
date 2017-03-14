@@ -1,3 +1,25 @@
-<p>
-  recipe-list works!
-</p>
+<section class="heading center-element">
+  <button  md-raised-button color="primary" (click)="addRecipe()"><md-icon>add</md-icon>Add Recipe</button>
+</section>
+<section class="recipes">
+  <md-card *ngFor="let recipe of recipes">
+    <md-card-header>
+      <md-card-title>
+        <h2>{{ recipe.name }}</h2>
+      </md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <ul>
+        <li *ngFor="let ingredient of recipe.ingredients">
+          {{ ingredient }}
+        </li>
+      </ul>
+    </md-card-content>
+
+    <md-card-footer>
+        <button md-raised-button color="primary" (click)="updateRecipe(recipe.id)"><md-icon>mode_edit</md-icon>Edit</button>
+        <button md-raised-button color="accent" (click)="deleteRecipe(recipe.id)"><md-icon>delete_sweep</md-icon>Delete</button>
+
+    </md-card-footer>
+  </md-card>
+</section>
