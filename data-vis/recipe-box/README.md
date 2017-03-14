@@ -1,21 +1,27 @@
-# Build a Recipe Box
+# RecipeBox
 
-## Objective
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
-Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/xVXWag/.
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Requirements
+## Code scaffolding
 
-* User Story: I can create recipes that have names and ingredients.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-* User Story: I can see an index view where the names of all the recipes are visible.
+## Build
 
-* User Story: I can click into any of those recipes to view it.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-* User Story: I can edit these recipes.
+## Running unit tests
 
-* User Story: I can delete these recipes.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-* User Story: All new recipes I add are saved in my browser's local storage. If I refresh the page, these recipes will still be there.
+## Running end-to-end tests
 
-## Notes
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

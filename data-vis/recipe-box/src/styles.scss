@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/all-theme';
+@include mat-core();
+
+$app-primary: mat-palette($mat-blue-grey);
+$app-accent:  mat-palette($mat-grey);
+$app-warn:    mat-palette($mat-red);
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+@include angular-material-theme($app-theme);
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width:0;
+  min-height:0;
+}
+
+.markdown {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    .preview {
+        flex: 1;
+        padding:0 15px;
+        .text {
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            height: 80vh;
+            padding: 5px;
+            resize: none;
+            width: 100%;
+            overflow-y:auto;
+        }
+    }
+
+}
+.center-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  order: 1;
+  flex-shrink: 0;
+}
+
+main {
+  order: 2;
+  flex: 1;
+  overflow: auto;
+  padding: 0 16px;
+}
+
+footer {
+  order: 3;
+  flex-shrink: 0;
+}
+
+.fill {
+  display: flex;
+  flex: 1 1 auto;
+}
