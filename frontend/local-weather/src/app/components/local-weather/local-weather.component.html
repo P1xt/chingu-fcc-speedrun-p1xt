@@ -1,10 +1,9 @@
-<md-card>
+<md-card class="weather">
   <section>
-    <ul>
-      <li>location: </li>
-      <li>temperature: </li>
-      <li>weather:</li>
-    </ul>
+    <h1><img src="http://openweathermap.org/img/w/{{icon}}.png" alt="{{description}}" />{{ city }}</h1>
+    <h2 class="center">{{ temp }} {{ temp_text}}</h2>
+    <p class="center">{{ description}}</p>
+    <button md-raised-button color="primary" (click)="toggleTemp()">Toggle F/C</button>
   </section>
 
 </md-card>

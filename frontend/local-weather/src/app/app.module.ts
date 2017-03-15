@@ -10,7 +10,8 @@ import { AppComponent } from './components/app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LocalWeatherComponent } from './components/local-weather/local-weather.component';
-
+import { GetWeatherService } from './services/get-weather.service';
+import { GeolocationService } from './services/geolocation.service';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,8 @@ import { LocalWeatherComponent } from './components/local-weather/local-weather.
     HttpModule
   ],
   providers: [ 
+    GetWeatherService,
+    GeolocationService
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   bootstrap: [AppComponent]
