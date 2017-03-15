@@ -67,6 +67,12 @@ export class BarChartComponent implements OnInit {
       .text("Years");
 
     svg.append("text")
+      .attr("class", "heading")
+      .attr("x", (width / 2) -150)
+      .attr("y", 40)
+      .text("Gross Domestic Product");
+
+    svg.append("text")
       .attr("class", "label")
       .attr("text-anchor", "end")
       .attr("y", padding + 5)

@@ -77,7 +77,7 @@ Copy this table as needed to make a separate table for each team member for reco
 |  3/14/2017  |  [Medium Post](https://medium.com/@P1xt/fcc-speedrun-recipe-box-fca16a37ddb#.hax2py3v7)  | [Build a Recipe Box](./data-vis/recipe-box) |  |
 |      |  [ ]()  | [Build the Game of Life](./data-vis/game-of-life) |  |
 |      |  [ ]()  | [Build a Roguelike Dungeon Crawler](./data-vis/dungeon-crawler) |  |
-|      |  [ ]()  | [Visualize Data with a Bar Chart](./data-vis/bar-chart) |  |
+|  3/15/2017  |  [Medium Post](https://medium.com/@P1xt/fcc-speedrun-visualize-data-with-a-bar-chart-aaaf555db634#.82t74z9h1)  | [Visualize Data with a Bar Chart](./data-vis/bar-chart) |  |
 |      |  [ ]()  | [Visualize Data with a Scatterplot Graph](./data-vis/scatterplot-graph) |  |
 |      |  [ ]()  | [Visualize Data with a Heat Map](./data-vis/heat-map) |  |
 |      |  [ ]()  | [Show National Contiguity with a Force Directed Graph](./data-vis/force-directed-graph) |  |

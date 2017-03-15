@@ -8,11 +8,15 @@
 .label {
   font-size: 1.1em;
 }
-h1 {
-  color: #608b6e;
+.heading {
+  font-size: 2em;
+  fill: #608b6e;
   text-align: center;
 }
-
+.chart-size {
+  width: 900px;
+  height: 500px;
+}
 /* tooltip styling from http://bl.ocks.org/Caged/6476579 */
 .d3-tip {
   line-height: 1;
