@@ -7,7 +7,6 @@ export class GeolocationService {
 
   constructor(private jsonp: Jsonp) { }
 
-
   getLocation = (position) => {
     let apiUrl: string = 'http://freegeoip.net/json';
     let params = new URLSearchParams();

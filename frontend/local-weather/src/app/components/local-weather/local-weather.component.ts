@@ -30,6 +30,7 @@ export class LocalWeatherComponent implements OnInit {
                    .subscribe((w) => this.getW(w))
   }
   getW(w) {
+    if (this.city === ', ') this.city = w.name;
     this.temp_f = +w.main.temp;
     this.temp = this.temp_f;
     this.temp_c = Math.round((this.temp_f-32) * (5/9));
