@@ -7,7 +7,7 @@ import { GeolocationService } from '../../services/geolocation.service';
   styleUrls: ['./local-weather.component.scss']
 })
 export class LocalWeatherComponent implements OnInit {
-  city: '';
+  city: string=  '';
   temp_f; temp_c; temp; temp_text = 'F';
   description: '';
   wind_speed: '';
@@ -19,14 +19,17 @@ export class LocalWeatherComponent implements OnInit {
   ngOnInit() {
     this.geolocationService.getLocation({})
       .subscribe(
-        (p) => this.getWeatherService.getWeather(p.coords)
-                   .subscribe((w) => this.getW(w))
+        (p) => this.getLocationInfo(p)
         
         , (p) => console.log(p));
   }
+  getLocationInfo(loc) {
+    this.city = loc.city + ', ' + loc.region_name;
+    let coords = { latitude: loc.latitude, longitude: loc.longitude };
+    this.getWeatherService.getWeather(coords)
+                   .subscribe((w) => this.getW(w))
+  }
   getW(w) {
-    console.log(w);
-    this.city = w.name;
     this.temp_f = +w.main.temp;
     this.temp = this.temp_f;
     this.temp_c = Math.round((this.temp_f-32) * (5/9));
