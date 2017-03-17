@@ -1,0 +1,23 @@
+header {
+  order: 1;
+  flex-shrink: 0;
+}
+
+main {
+  order: 2;
+  flex: 1;
+  overflow: auto;
+  padding: 0 16px;
+  margin-top: 50px;
+  flex-grow: 1;
+}
+
+footer {
+  order: 3;
+  flex-shrink: 0;
+}
+
+.fill {
+  display: flex;
+  flex: 1 1 auto;
+}

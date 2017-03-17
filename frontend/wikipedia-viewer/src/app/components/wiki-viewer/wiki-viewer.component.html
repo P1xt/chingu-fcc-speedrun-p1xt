@@ -1,0 +1,20 @@
+<md-card>
+  <div class="content">
+  <section class="query">
+    <md-input-container>
+      <input mdInput [(ngModel)]="query" placeholder="Search Query">
+    </md-input-container>
+    <button md-raised-button color="primary" (click)="getEntries()">Search</button>
+    <a md-raised-button color="accent" href="https://en.wikipedia.org/wiki/Special:Random">Random</a>
+  </section>
+  <section class="results" *ngIf="entries.length > 0">
+    <h2>Results</h2>
+    <ul *ngFor="let entry of entries">
+      <li>
+        <h3> <a href="{{entry.url}}">{{entry.title}}</a></h3>
+        <p>{{entry.text}}</p>
+      </li>
+    </ul>
+  </section>
+  </div>
+</md-card>
